@@ -12,7 +12,7 @@
     var currentDate = date + ' ' + time;
     
     // set variables for the YQL string
-    var yql_xmlfeed = 'https://www.myschoolcast.com/rss/default.aspx?cid=3067';
+    var yql_xmlfeed = 'https://www.myschoolcast.com/rss/default.aspx?cid=XXXX';
     var yql_query = encodeURIComponent('select * from xml where url="' + yql_xmlfeed + '"');
     var yql = 'https://query.yahooapis.com/v1/public/yql?q=' + yql_query + '&format=xml&callback=?';
     

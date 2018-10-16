@@ -1,11 +1,7 @@
-/*
- * VS Emergency Alerts
- */
-;
 (function ($) {
   $(document).ready(function() {
   	
-  	// add a div after the body tag
+  	// add a div before the body tag
     $('body').prepend("<div class='row' id='vsAlerts'><div class='col-xs-12 col-sm-12 col-md-12'><div class='marquee'></div></div></div>");
   	$("#vsAlerts").hide();
   	
@@ -15,7 +11,7 @@
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     var currentDate = date + ' ' + time;
     
-    // Set variables for the YQL string
+    // set variables for the YQL string
     var yql_xmlfeed = 'https://www.myschoolcast.com/rss/default.aspx?cid=3067';
     var yql_query = encodeURIComponent('select * from xml where url="' + yql_xmlfeed + '"');
     var yql = 'https://query.yahooapis.com/v1/public/yql?q=' + yql_query + '&format=xml&callback=?';
@@ -40,7 +36,7 @@
             if (hours <= 24) {
               var output = "<span id='txt" + i + "'>" + pubDate + ": " + title + " - " + description + "</span>";
               $(".marquee").append(output);   // add item to the marquee
-              $("#vsAlerts").show();        // display the alert div
+              $("#vsAlerts").show();          // display the alert div
             }
   
         });

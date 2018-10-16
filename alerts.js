@@ -42,14 +42,14 @@
         });
         
         // start the scrolling marquee
-				$('.marquee').marquee({
-			    duration: 12000,
-			    startVisible: true,
-			    duplicated: false,
-			    allowCss3Support: true,
-			    css3easing: 'linear',
-			    delayBeforeStart: 1200
-		  	});
+        $('.marquee').marquee({
+          duration: 12000,
+          startVisible: true,
+          duplicated: false,
+          allowCss3Support: true,
+          css3easing: 'linear',
+          delayBeforeStart: 1200
+        });
 
     });
     

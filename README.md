@@ -1,3 +1,3 @@
 # alerts
 
-read from emergency alerts RSS feed and display as a ticker
+read from the emergency alerts RSS feed and display the lastest entries as a ticker
